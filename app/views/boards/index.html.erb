@@ -45,9 +45,10 @@
         </a>
       </div>
       <div>
+
        <% matching_users = User.where({ :id => a_board.user_id }) %>
        <% the_user = matching_users.at(0)%>
-       Owner: <%= the_user.email %>
+          Owner: <%= the_user.email %>
       </div>
     </li>
     <hr>
